@@ -1,16 +1,2 @@
-# Main navigation
-main:
-  - title: "About"
-    url: /about/
-
-  - title: "Research"
-    url: /research/
-
-  - title: "Projects"
-    url: /projects/
-
-  - title: "Writing"
-    url: /writing/
-
-  - title: "CV"
-    url: /cv/
+# Single-page site: primary navigation is intentionally hidden.
+main: []
