@@ -394,3 +394,385 @@ figure img {
     font-size: 27px;
   }
 }
+
+/* === YAWEN SINGLE-PAGE ACADEMIC LAYOUT === */
+
+:root {
+  --yw-blue: #1f43b7;
+  --yw-text: #3f3f46;
+  --yw-muted: #6f7280;
+  --yw-line: #dbe5ff;
+  --yw-soft-blue: #f1f6ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 0 !important;
+  background: #fff;
+  color: var(--yw-text);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.masthead {
+  display: none !important;
+}
+
+#main {
+  max-width: 1180px !important;
+  margin: 0 auto;
+  padding: 54px 28px 70px;
+}
+
+.page,
+.archive {
+  width: 100% !important;
+  max-width: none !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page__title {
+  display: none;
+}
+
+.page__content {
+  margin: 0;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.page__content h2 {
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+  color: var(--yw-blue);
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.page__content h3 {
+  margin: 0 0 0.25rem;
+  color: var(--yw-blue);
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.page__content p {
+  margin: 0 0 1rem;
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+.page__content a {
+  color: var(--yw-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.page__content a:hover {
+  text-decoration: underline;
+}
+
+.yw-singlepage {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 64px;
+  align-items: start;
+}
+
+/* Left profile column */
+.yw-profile {
+  position: sticky;
+  top: 36px;
+}
+
+.yw-avatar-wrap {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(145deg, #f3f3f3, #e6e6e6);
+  box-shadow: 0 7px 24px rgba(30, 45, 90, 0.14);
+}
+
+.yw-avatar-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.yw-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 50% 38%, #eeeeee 0 20%, transparent 21%),
+    radial-gradient(circle at 50% 82%, #e6e6e6 0 34%, transparent 35%),
+    #f7f7f7;
+}
+
+.yw-name {
+  margin: 0;
+  color: var(--yw-blue);
+  font-size: 31px;
+  line-height: 1.15;
+  font-weight: 650;
+  text-align: center;
+  letter-spacing: -0.025em;
+}
+
+.yw-profile-role {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #50525c;
+}
+
+.yw-profile-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 11px;
+  font-size: 14px;
+}
+
+.yw-profile-links a {
+  color: var(--yw-blue);
+  font-weight: 600;
+}
+
+/* Timeline directly under the person */
+.yw-timeline-title {
+  margin: 44px 0 19px;
+  color: var(--yw-blue);
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.yw-timeline {
+  position: relative;
+  margin-left: 6px;
+  padding-left: 27px;
+}
+
+.yw-timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  background: var(--yw-line);
+}
+
+.yw-timeline-item {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.yw-timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 7px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #4f8df7;
+  box-shadow: 0 0 0 2px #dce8ff;
+}
+
+.yw-timeline-date {
+  color: var(--yw-blue);
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.yw-timeline-text {
+  margin-top: 2px;
+  color: #4e5058;
+  font-size: 14px;
+  line-height: 1.52;
+}
+
+/* Right main column */
+.yw-maincol {
+  min-width: 0;
+  padding-top: 4px;
+}
+
+.yw-intro {
+  margin-bottom: 26px;
+}
+
+.yw-highlight {
+  margin: 20px 0 28px;
+  padding: 18px 22px;
+  border-left: 5px solid #4a82ff;
+  border-radius: 7px;
+  background: var(--yw-soft-blue);
+  box-shadow: 0 2px 10px rgba(70, 105, 180, 0.05);
+}
+
+.yw-highlight p:last-child {
+  margin-bottom: 0;
+}
+
+.yw-section {
+  margin-top: 31px;
+}
+
+.yw-section + .yw-section {
+  margin-top: 38px;
+}
+
+/* Publication-style research/project rows */
+.yw-work {
+  display: grid;
+  grid-template-columns: 205px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+
+.yw-work-media {
+  width: 205px;
+  aspect-ratio: 4 / 2.6;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  background: linear-gradient(135deg, #f8f8f8, #ececec);
+}
+
+.yw-work-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yw-work-body {
+  padding-top: 1px;
+}
+
+.yw-work-title {
+  margin: 0 0 4px;
+  color: var(--yw-blue);
+  font-size: 17px;
+  line-height: 1.42;
+  font-weight: 650;
+}
+
+.yw-work-meta {
+  margin-bottom: 4px;
+  color: #50525c;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.yw-work-desc {
+  margin: 0 0 5px !important;
+  color: #50525c;
+  font-size: 14px !important;
+  line-height: 1.52 !important;
+}
+
+.yw-work-links {
+  font-size: 13px;
+}
+
+.yw-work-links a + a::before {
+  content: " · ";
+  margin: 0 3px;
+  color: #999;
+}
+
+.yw-compact-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.yw-compact-list li {
+  margin-bottom: 0.45rem;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.page__footer {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #main {
+    padding-top: 32px;
+  }
+
+  .yw-singlepage {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .yw-profile {
+    position: static;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .yw-timeline-title {
+    margin-top: 32px;
+  }
+
+  .yw-maincol {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #main {
+    padding: 24px 18px 54px;
+  }
+
+  .yw-avatar-wrap {
+    width: 176px;
+    height: 176px;
+  }
+
+  .yw-name {
+    font-size: 28px;
+  }
+
+  .page__content h2 {
+    font-size: 25px;
+  }
+
+  .yw-work {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 27px;
+  }
+
+  .yw-work-media {
+    width: 100%;
+    max-width: 330px;
+  }
+}
