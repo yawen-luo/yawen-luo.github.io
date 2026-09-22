@@ -97,3 +97,300 @@ figcaption,
 .masthead a {
   font-weight: 400;
 }
+
+/* Xinyue Chen–inspired academic presentation */
+
+/* Overall page proportions */
+body {
+  color: #222;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+#main {
+  max-width: 980px !important;
+  margin: 2rem auto 0;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.page,
+.archive {
+  float: none !important;
+  width: 100% !important;
+  max-width: 900px;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.sidebar {
+  display: none !important;
+}
+
+/* Quiet academic masthead */
+.masthead {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.masthead::after {
+  background: #eeeeee;
+}
+
+.masthead__inner-wrap {
+  max-width: 980px !important;
+  padding: 0.55rem 24px;
+}
+
+.masthead__menu-item--lg {
+  font-weight: 500;
+  padding-right: 2.25rem;
+}
+
+.greedy-nav a,
+.masthead a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.masthead__menu-item.selected a {
+  color: #111;
+  font-weight: 500;
+  border-bottom: 0;
+}
+
+/* Typography */
+.page__title,
+.archive .page__title {
+  font-size: 29px;
+  line-height: 1.18;
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+}
+
+.page__content h1,
+.archive h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0 0 0.35rem;
+}
+
+.page__content h2,
+.archive h2 {
+  margin: 2.15rem 0 0.9rem;
+  padding: 0;
+  border: 0;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.page__content h3,
+.archive h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.page__content p,
+.page__content li,
+.archive p,
+.archive li {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.page__content p,
+.archive p {
+  margin-bottom: 0.8rem;
+}
+
+.page__content a,
+.archive a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+.page__content a:hover,
+.archive a:hover {
+  color: #0f5ca8;
+  text-decoration: underline;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+/* Homepage identity */
+.yw-identity {
+  margin-bottom: 1.65rem;
+}
+
+.yw-identity h1 {
+  margin-bottom: 0.25rem;
+}
+
+.yw-role {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.yw-links {
+  margin-top: 0.35rem;
+  font-size: 14px;
+}
+
+.yw-links a + a::before {
+  content: " · ";
+  color: #999;
+  margin: 0 0.2rem;
+}
+
+/* News: compact, date-led */
+.yw-news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.yw-news li {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 10px;
+  margin: 0 0 0.48rem;
+  line-height: 1.45;
+}
+
+.yw-date {
+  color: #777;
+  white-space: nowrap;
+}
+
+/* Research / project entries inspired by compact academic publication lists */
+.yw-entry {
+  display: grid;
+  grid-template-columns: 185px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  margin: 0 0 1.65rem;
+}
+
+.yw-entry-media {
+  width: 185px;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+
+.yw-entry-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.yw-placeholder {
+  background:
+    linear-gradient(135deg, #f6f6f6 0%, #ededed 100%);
+  border: 1px solid #e8e8e8;
+}
+
+.yw-entry-body {
+  padding-top: 1px;
+}
+
+.yw-entry-body h3 {
+  margin: 0 0 0.24rem;
+  color: #222;
+}
+
+.yw-entry-body h3 a {
+  color: #1772d0;
+}
+
+.yw-entry-body p {
+  margin: 0 0 0.34rem;
+  color: #333;
+}
+
+.yw-entry-meta {
+  margin-bottom: 0.28rem;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.yw-entry-links {
+  font-size: 13px;
+}
+
+.yw-entry-links a + a::before {
+  content: " · ";
+  color: #999;
+  margin: 0 0.15rem;
+}
+
+/* Remove template-y visual noise */
+.archive__subtitle,
+.page__content h2 {
+  border-bottom: 0;
+}
+
+.archive__item-teaser,
+figure img {
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
+.page__footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.page__footer-copyright {
+  color: #888;
+  font-size: 12px;
+}
+
+/* Mobile */
+@media (max-width: 680px) {
+  #main {
+    margin-top: 1.4rem;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .masthead__inner-wrap {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .yw-entry {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 1.8rem;
+  }
+
+  .yw-entry-media {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .yw-news li {
+    grid-template-columns: 1fr;
+    gap: 1px;
+    margin-bottom: 0.7rem;
+  }
+
+  .page__content h1,
+  .archive h1 {
+    font-size: 27px;
+  }
+}
