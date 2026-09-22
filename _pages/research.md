@@ -2,31 +2,34 @@
 layout: archive
 title: "Research"
 permalink: /research/
-author_profile: true
+author_profile: false
 ---
 
-My current research interests include **human-computer interaction, extended reality, human-centered AI, multimodal interaction, and intelligent interactive systems**.
+My research interests include **Human-Computer Interaction, Extended Reality, Human-Centered AI, multimodal interaction, and intelligent interactive systems**.
 
-## Physical Understanding in AI-Generated Video
-**Nov. 2025 – Jan. 2026**
+<div class="yw-entry">
+  <div class="yw-entry-media yw-placeholder"></div>
+  <div class="yw-entry-body">
+    <h3>Adaptive XR Interaction with Eye Tracking and LLMs</h3>
+    <div class="yw-entry-meta">Ongoing · XR · Eye Tracking · Human-Centered AI</div>
+    <p>Exploring adaptive VR interaction, multimodal sensing, and LLM-supported dialogue for social-skill assessment and intervention.</p>
+  </div>
+</div>
 
-This project investigated how state-of-the-art AI video generation models follow physical laws, an issue relevant to trustworthy generative media, simulation, and embodied AI.
+<div class="yw-entry">
+  <div class="yw-entry-media yw-placeholder"></div>
+  <div class="yw-entry-body">
+    <h3>Physical Understanding in AI-Generated Video</h3>
+    <div class="yw-entry-meta">Nov. 2025 – Jan. 2026 · AI Evaluation · Benchmark Design</div>
+    <p>Studied whether contemporary AI video-generation models follow physical laws. I developed evaluation cases and judgment criteria and contributed to the research framework.</p>
+  </div>
+</div>
 
-**My contributions**
-- Developed evaluation cases and judgment criteria.
-- Contributed to the overall research framework.
-- Participated in comparative evaluation of contemporary video-generation models.
-
-## LabVIEW-Based Physical Sandbox Control System for Disaster Relief Simulation
-**May 2026 – Aug. 2026**
-
-This project involved the development of an energy-management-oriented physical sandbox system with parallel LabVIEW, Simulink, and Raspberry Pi components.
-
-**My contributions**
-- Designed and developed the `ControllerGUI`, `Monitor`, `SendUDP`, and `ReceiveUDP` modules.
-- Implemented control interfaces, state monitoring, and UDP-based communication.
-- Integrated the LabVIEW application layer with simulation and hardware-control components.
-
-## Ongoing Direction
-
-I am continuing to explore XR-based interaction, eye tracking, multimodal sensing, and LLM-supported interactive systems, with particular interest in applications where adaptive technology can support communication, accessibility, and real-world human needs.
+<div class="yw-entry">
+  <div class="yw-entry-media yw-placeholder"></div>
+  <div class="yw-entry-body">
+    <h3>LabVIEW-Based Physical Sandbox Control System for Disaster Relief Simulation</h3>
+    <div class="yw-entry-meta">May 2026 – Aug. 2026 · LabVIEW · UDP · System Integration</div>
+    <p>Developed control, monitoring, UDP communication, and integration modules for a system spanning LabVIEW, simulation, and hardware-control components.</p>
+  </div>
+</div>
