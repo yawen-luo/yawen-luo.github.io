@@ -37,3 +37,63 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* ==========================================================================
+   Yawen Luo — custom typography
+   Helvetica Neue first, with clean system fallbacks.
+   ========================================================================== */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.58;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title,
+.author__name,
+.greedy-nav,
+.site-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.015em;
+}
+
+h1,
+.page__title {
+  font-weight: 500;
+}
+
+h2, h3, h4, h5, h6,
+.archive__item-title {
+  font-weight: 500;
+}
+
+p,
+li {
+  font-weight: 400;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+figcaption,
+.page__meta,
+.archive__item-excerpt {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.greedy-nav a,
+.masthead a {
+  font-weight: 400;
+}
